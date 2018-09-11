@@ -1,0 +1,22 @@
+<!--pages/index/index.wxml-->
+<view class='header'>
+<image src='https://wx1.sinaimg.cn/orj360/a87e33b6gy1fv5o2tbqejj20m80m8ac0.jpg' ></image>
+<view class='sm-image' >
+<image src='https://wx4.sinaimg.cn/orj360/006KAwURly1fv5i8i8xdjj30j60y3dhs.jpg'></image>
+</view>
+</view>
+<view class='container' wx:for="{{feed}}">
+  <view class='left' style="background-image:url({{item.user_avater}})"></view>
+  <view class='right'>
+    <view class='name'>{{item.user_name}}</view>
+    <view class='content'>{{item.content}}</view>
+    <view class='images' >
+       <view class='image' wx:for="{{item.images}}"  style="background-image:url({{item}})"  ></view>
+ 
+    </view>
+    <view class='bottom'>
+      <view class='pubtime'>{{item.pubtime}}</view>
+      <view class='address'>{{item.address}}</view>
+    </view>
+  </view>
+</view>
