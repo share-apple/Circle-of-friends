@@ -26,7 +26,7 @@ Page({
       title: '正在发布',
     })
     wx.request({
-      url: 'http://headline.aaa.com/wechat.php?c=wechat&m=insert',
+      url: 'http://friend.aaa.com/wechat.php?c=wechat&m=insert',
       data: {
         user_name: this.data.userInfo.nickName,
         user_avater: this.data.userInfo.avatarUrl,

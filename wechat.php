@@ -4,20 +4,20 @@
 // $method = $_GET['m'];
 // $page = new $className();
 // $page->$method(); 
-// if(isset($_GET['c'])){
+if(isset($_GET['c'])){
 $className = $_GET['c'];
 }else {
 	$className = 'wechat';
 }
 
-include '../controller/wechat/' . $className . '.php';
+include './controller/wechat/' . $className . '.php';
 
 if(isset($_GET['m'])){
 
 $method = $_GET['m'];
 
 }else {
-	$method = '';
+	$method = 'feed';
 }
 
 $page = new $className();

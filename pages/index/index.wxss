@@ -17,8 +17,8 @@ pages {
   position: absolute;
   color: white;
   font-size: 32rpx;
-  top: 0;
-  left: 0;
+  bottom: 20rpx;
+  right: 224rpx;
 }
 .sm-image{
   position: absolute;
@@ -39,7 +39,6 @@ pages {
   display: flex;
   overflow: hidden;
 }
-
 .container .left {
   width: 90rpx;
   height: 90rpx;

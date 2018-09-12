@@ -27,7 +27,7 @@ Page({
    */
   onShow: function () {
     wx.request({
-      url:'http://headline.aaa.com/wechat.php?c=wechat&m=feed',
+      url:'http://friend.aaa.com/wechat.php?c=wechat&m=feed',
        success:(res)=>{
          feed: res.data.map(v => {
            v.images=v.images.split(';')
