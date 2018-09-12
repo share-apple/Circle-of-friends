@@ -12,12 +12,19 @@ pages {
 .header image{
  width: 750rpx;
  height:600rpx;
-
+}
+.texts{
+  position: absolute;
+  color: white;
+  font-size: 32rpx;
+  top: 0;
+  left: 0;
 }
 .sm-image{
   position: absolute;
   right: 25rpx;
   bottom: -50rpx;
+  border: 3rpx solid snow;
 
 }
 .sm-image image{

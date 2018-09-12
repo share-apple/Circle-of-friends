@@ -1,0 +1,12 @@
+<!--pages/me/me.wxml-->
+<block wx:if="{{!userInfo}}">
+  <button open-type="getUserInfo" bindgetuserinfo="get">
+    授权使用
+  </button>
+</block>
+<block wx:else>
+  <view class="avatar" style="width:200rpx;height:200rpx;background:url({{userInfo.avatarUrl}}) no-repeat center center/100% auto"></view>
+  <view class="user_name">{{userInfo.nickName}}</view>
+  <input placeholder="输入" type="text" bindinput="input" />
+  <view bindtap="submit">发布</view>
+</block>

@@ -1,12 +1,36 @@
 {
   "pages": [
-    "pages/index/index"
-
+    "pages/index/index",
+    "pages/me/me"
   ],
   "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "navigationBarBackgroundColor": "#F7A78E",
+    "navigationBarTitleText": "皮皮虾店",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#F7FAFA",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh":true
+  },
+  "tabBar": {
+    "backgroundColor": "#F7A78E",
+    "selectedColor":"#FFFCFF",
+    "color": "#31F7FA",
+    "borderStyle":"white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "img/b.png",
+        "selectedIconPath": "img/a.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "日志",
+        "iconPath": "img/b.png",
+        "selectedIconPath": "img/a.png"
+      }
+    ]
+   
+
   }
 }
